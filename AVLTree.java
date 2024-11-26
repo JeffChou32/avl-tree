@@ -1,8 +1,3 @@
-
-/** Starter code for AVL Tree
- */
- 
-// replace package name with your netid
 package jxc033200;
 
 public class AVLTree<T extends Comparable<? super T>> extends BinarySearchTree<T> {
@@ -86,7 +81,7 @@ public class AVLTree<T extends Comparable<? super T>> extends BinarySearchTree<T
      * Calculates the height of a Entry
      * <p>
      * null Entries will have a height of -1
-     * <p?
+     * <p>
      * @param t - the entry for which to get the height
      * @return  - returns the height of the Entry, or -1 for no Entry
      */
@@ -170,8 +165,7 @@ public class AVLTree<T extends Comparable<? super T>> extends BinarySearchTree<T
         }
         return t;
     }
-	
-	//Optional. Complete for extra credit
+		
 	@Override
     public T remove(T x) {
 	return super.remove(x);

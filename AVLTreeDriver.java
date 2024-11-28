@@ -1,12 +1,8 @@
-
-// replace package name with your netid
 package jxc033200;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
-//Driver program for AVL tree implementation.
 
 public class AVLTreeDriver {
 	public static void main(String[] args) throws FileNotFoundException {

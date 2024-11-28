@@ -1,9 +1,3 @@
-/**
- * @author rbk, sa
- * Binary search tree (starter code)
- **/
-
-// replace package name with your netid
 package jxc033200;
 
 import java.io.File;
@@ -54,8 +48,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> implements Iterab
     */
 
     public Entry<T> find(T x) {     //wrapper method - find entry containing x, or entry at which find failed
-        s.clear();
-        //s.push(null);
+        s.clear();        
         return find(root, x);
     }
     
@@ -83,7 +76,7 @@ public class BinarySearchTree<T extends Comparable<? super T>> implements Iterab
         return t;   //return element found or where last entry accessed if not found
     }
 
-    /** TO DO: Is x contained in tree?
+    /** Is x contained in tree?
      * <p>
      * The contains() method checks whether the specified element is in the tree
      * <p>
@@ -215,16 +208,15 @@ public class BinarySearchTree<T extends Comparable<? super T>> implements Iterab
  
 
 
-// Start of Optional problems
 
-    /** Optional problem : Iterate elements in sorted order of keys
+
+    /** Iterate elements in sorted order of keys
      Solve this problem without creating an array using in-order traversal (toArray()).
      */
     public Iterator<T> iterator() {
         return null;
     }
-
-    // Optional problem
+    
     public T min() {
         return null;
     }
@@ -233,34 +225,32 @@ public class BinarySearchTree<T extends Comparable<? super T>> implements Iterab
         return null;
     }
 
-    // Optional problem.  Find largest key that is no bigger than x.  Return null if there is no such key.
+    // Find largest key that is no bigger than x.  Return null if there is no such key.
     public T floor(T x) {
         return null;
     }
 
-    // Optional problem.  Find smallest key that is no smaller than x.  Return null if there is no such key.
+    // Find smallest key that is no smaller than x.  Return null if there is no such key.
     public T ceiling(T x) {
         return null;
     }
 
-    // Optional problem.  Find predecessor of x.  If x is not in the tree, return floor(x).  Return null if there is no such key.
+    // Find predecessor of x.  If x is not in the tree, return floor(x).  Return null if there is no such key.
     public T predecessor(T x) {
         return null;
     }
 
-    // Optional problem.  Find successor of x.  If x is not in the tree, return ceiling(x).  Return null if there is no such key.
+    // Find successor of x.  If x is not in the tree, return ceiling(x).  Return null if there is no such key.
     public T successor(T x) {
         return null;
     }
 
-   // Optional: Create an array with the elements using in-order traversal of tree
+   // Create an array with the elements using in-order traversal of tree
     public Comparable[] toArray() {
         Comparable[] arr = new Comparable[size];
         /* write code to place elements in array here */
         return arr;
     }
-	
-// End of Optional problems
 
     public static void main(String[] args) throws FileNotFoundException {
         BinarySearchTree<Long> bst = new BinarySearchTree<>();

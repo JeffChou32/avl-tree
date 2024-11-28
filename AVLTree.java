@@ -171,8 +171,7 @@ public class AVLTree<T extends Comparable<? super T>> extends BinarySearchTree<T
 	return super.remove(x);
     }
 	
-	/** TO DO
-	 *	verify if the tree is a valid AVL tree, that satisfies 
+	/** 	Verify if the tree is a valid AVL tree, that satisfies 
 	 *	all conditions of BST, and the balancing conditions of AVL trees. 
 	 *	In addition, do not trust the height value stored at the nodes, and
 	 *	heights of nodes have to be verified to be correct.  Make your code

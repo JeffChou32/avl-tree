@@ -24,14 +24,14 @@ The remove() method inherits from BinarySearchTree and may be overridden to inco
 Verifies AVL properties after each modification. It checks the BST property, height accuracy, and ensures that all balance factors are within the permissible range for AVL trees.
 This program is ideal for understanding AVL Trees and balancing operations, with clear debug messages for each rotation and validation checks to reinforce correctness.
 
-$$ Compile: 
+## Compile: 
 javac jxc033200/*.java
 
-$$ Code Execution:
+## Code Execution:
 To run all test cases for BinarySearchTree:
 java jxc033200/BinarySearchTree bst-t04-no-remove.txt
 java jxc033200/BinarySearchTree bst-t05-no-remove.txt
 
-$$ To run all test cases for AVLTreeDriver:
+## To run all test cases for AVLTreeDriver:
 java jxc033200/AVLTreeDriver bst-t04-no-remove.txt
 java jxc033200/AVLTreeDriver bst-t05-no-remove.txt
